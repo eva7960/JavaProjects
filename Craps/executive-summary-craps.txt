@@ -1,0 +1,67 @@
+Assignment name: The Game of Craps
+
+Name: Eva Howard
+UWNetID: eva7960
+
+Assignment Overview:
+For this assignment you are to create the game of Craps. This project needs to be designed in
+terms of model, view, controller. All game logic and data should be contained in the model
+package while all the GUI components and listeners should be kept in the view package. While
+action listeners for buttons is considered controller code, because of how java swing works
+it is fine to have listeners and buttons together in the view package. The controller package
+should contain main, the entry point for your game, and be used to process data and other
+information between the model and the view. Your game should have a menu bar with game and
+help menu. The game menu should have the following sub menus: start, reset, and exit, while
+the help menu should have the following sub menus: rules and about. There needs to be at
+least two buttons, one to roll the dice and another to play again. These buttons should be
+enabled and disabled appropriately. There should be JLabels to display each die, the sum,
+the user wins, the house wins, and the point. Additionally, once the game works, implement
+a betting system where the user can input their bank at the start of each game and input
+their bet for every round. These numbers also need to be tested for appropriate values
+and should be disabled and enabled as needed.
+
+Technical Impression:
+I experienced some ups and downs while making this game but in all I had a lot of fun
+creating it. To start, I really had no idea how any GUI worked. In our previous assignments
+we coded action listeners, but we didn't actually have any practice with putting GUI components
+on a frame, so I had to research how to do all of that, I felt like I was truly starting from scratch.
+There's a super helpful video I found that helped me implement all the basic GUI components and explained
+the basic behaviors for them, I have the video listed below. I started with creating the model and just
+coding how the game would work, but I quickly realized I sort of needed to plan out how the three packages
+were going to work together so that I could code efficiently and have an idea of where to start with things.
+I actually looked up a video explaining MVC which I found really helpful and I also listed below. Learning
+how the structure of MVC works I roughly drafted what code each package would have and do. Before Tom explained
+that the buttons and components could be together in the view I was having a lot of difficulty. Because action
+listeners are what drive the game I was trying to construct all the buttons in the controller and passing them
+into the view but that was really difficult and I didn't know what I was doing. However, once Tom cleared that
+up things went a lot smoother, and I was able to start making progress. I actually started with the GUI layout
+because I figured once I had a visual I could start wiring in the buttons and stuff and start making methods
+as necessary. GUI is pretty tedious and takes a lot of time. I had difficulty adding buttons to a panel and adding
+the panel to the frame, for some reason my buttons wouldn't show up, or I wasn't able to move them. I ended up
+just putting the components on the frame instead but some of my peers said that to make it work they had to adjust
+the panel to just fit the component, and then they were able to place it on their frame. For the future I would probably
+use panels because they help to organize everything. The only thing I want to bring up is that for my model test, I
+wasn't sure how to test my roll dice method because it returns a random integer, so I don't know what to put for
+the expected value that will match the actual value for the assertEquals. I programmed it to just keep rolling
+until it got the number I expected.
+
+Unresolved problems in my submission:
+N/A
+
+Citations and Collaborations:
+MVC explained - https://youtu.be/DUg2SWWK18I
+GUI course - https://www.youtube.com/watch?v=Kmgo00avvEw
+Java audio input - https://www.youtube.com/watch?v=wJO_cq5XeSA
+
+The GUI course video is 5 hour video with time stamps of basic components
+such as buttons, labels, text fields, frames, panels, etc. super super helpful
+I cannot recommend it more for beginners at GUI.
+
+Questions:
+N/A
+
+Extra Credit:
+I have two dice icons that change when you roll the dice, I also added audio for
+when you roll the dice and also for when you lose or win. I also implemented
+betting buttons which I'm not sure counts as extra credit but it would be really cool
+if it did.
